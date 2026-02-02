@@ -15,4 +15,4 @@ hugo.linux
 
 /.idea/
 
-.DS_Store
+/**/.DS_Store
