@@ -6,4 +6,4 @@ run = "hugo serve -M"
 
 [tasks.build-site]
 description = "Builds the site with hugo."
-run = "hugo -s docs --minify"
+run = "hugo --minify"
