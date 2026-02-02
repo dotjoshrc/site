@@ -3,3 +3,7 @@ hugo = "0.154"
 
 [tasks.local]
 run = "hugo serve -M"
+
+[tasks.build-site]
+description = "Builds the site with hugo."
+run = "hugo -s docs --minify"

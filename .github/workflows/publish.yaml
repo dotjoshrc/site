@@ -1,0 +1,15 @@
+name: publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: jdx/mise-action@v3
+      - run: mise run build-site
+      - uses: peaceiris/actions-gh-pages@v3
